@@ -929,14 +929,14 @@ call-to-action .button {
 footer {
    padding-top: 48px;
    margin-bottom: 48px;
-   color: #303030;
+   color: white;
    font-size: 14px;
    text-align: center;
    position: relative;
 }
 
-footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a, footer a:visited { color: white; }
+footer a:hover, footer a:focus { color: white; }
 
 /* copyright */
 footer .copyright {
@@ -956,7 +956,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: #095153;
+    color: white;
 }
 footer .copyright  li:first-child:before {
     display: none;
