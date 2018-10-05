@@ -22,7 +22,7 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #0f0f0f; }
+body { background: #fff; }
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -950,6 +950,7 @@ footer .copyright li {
     margin: 0;
     padding: 0;
     line-height: 24px;
+    color: black;
 }
 .ie footer .copyright li {
    display: inline;
@@ -958,7 +959,7 @@ footer .copyright li:before {
     content: "\2022";
     padding-left: 10px;
     padding-right: 10px;
-    color: white;
+    color: black;
 }
 footer .copyright  li:first-child:before {
     display: none;
@@ -1007,4 +1008,39 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #0F9095; }
+
+
+.publ ul {
+   /*padding-left: 2px;*/
+}
+.publ li {
+    border: 1px solid #CCC;
+    padding: 5px;
+    /*margin: 1px 2px;*/
+    display: inline-block;
+    color: brown;
+}
+
+.puba {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+
+.pubt {
+    font-size: 20px;
+    font-weight: 600;
+    color: MidnightBlue;
+}
+
+.pubd {
+    font-size: 16px;
+    font-weight: 300;
+}
+.pubv {
+    font-size: 16px;
+    font-weight: 600;
+    color: darkgreen;
+}
+
 
