@@ -229,6 +229,10 @@ ul#nav li.current a { color: #F06000; }
    line-height: 30px;
    color: #000;
 }
+#about li {
+   line-height: 30px;
+   color: #000;
+}
 #about .profile-pic {
    position: relative;
    width: 200px;
@@ -305,6 +309,9 @@ ul#nav li.current a { color: #F06000; }
 #recent.date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+#about table {
+   color: #000;
 }
 
 /*----------------------------------------------*/
