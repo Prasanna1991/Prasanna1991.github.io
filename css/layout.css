@@ -230,11 +230,9 @@ ul#nav li.current a { color: #F06000; }
    color: #000;
 }
 #about li {
-   line-height: 30px;
    color: #000;
 }
 #about ul {
-   line-height: 30px;
    color: #000;
 }
 #about .profile-pic {
@@ -314,7 +312,7 @@ ul#nav li.current a { color: #F06000; }
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
-#about table {
+#recent table {
    color: #000;
 }
 
@@ -461,6 +459,10 @@ ul#nav li.current a { color: #F06000; }
     border-bottom: 3px solid #11ABB0;
     padding-bottom: 6px;
 }
+#research font {
+   color: #000;	
+}
+
 
 /* Portfolio Content */
 #research-wrapper .columns { margin-bottom: 36px; }
