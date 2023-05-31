@@ -1,369 +1,385 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="Prashnna K Gyawali" content="">
+    <meta name="Prashnna K Gyawali" content="">
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Prashnna K Gyawali</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+    <title>Prashnna K Gyawali</title>
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- Nunito Sans font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- font awesome icons -->
+    <link href="css/icon.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Overriding personal style -->
+    <link href="css/style.css" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <script type="text/javascript">
+   function visibility_on(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'none')
+            e.style.display = 'block';
+   }
+   function visibility_off(id) {
+        var e = document.getElementById(id+"_text");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+        var e = document.getElementById(id+"_img");
+        if(e.style.display == 'block')
+            e.style.display = 'none';
+   }
+   function toggle_visibility(id) {
+       var e = document.getElementById(id+"_text");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+       var e = document.getElementById(id+"_img");
+       if(e.style.display == 'inline')
+          e.style.display = 'block';
+       else
+          e.style.display = 'inline';
+   }
+   function toggle_vis(id) {
+       var e = document.getElementById(id);
+       if (e.style.display == 'none')
+           e.style.display = 'inline';
+       else
+           e.style.display = 'none';
+   }
+</script>
+  
+  </head>
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Prashnna K Gyawali</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <!-- <li><a href="#news">News</a></li>	     -->
+            <li><a href="#research">Research</a></li>
+	    <li><a href="#students">Advising</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <!--<li><a href="#papers">Service</a></li>-->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
-</head>
-
-<body>
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-       <nav id="nav-wrap">
-           
-           <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-           <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-           
-           <ul id="nav" class="nav">
-<!--               <li class="current"><a class="smoothscroll" href="#home">Home</a></li>-->
-               <li><a class="smoothscroll" href=#about>Home</a></li>
-               <li><a class="smoothscroll" href=#recent>Recent</a></li>
-               <li><a class="smoothscroll" href=#research>Research</a></li>
-               <li><a href="blog.html">Blog</a></li>
-<!--               <li><a class="smoothscroll" href="#contact">Contact</a></li>-->
-           </ul> <!-- end #nav -->
-           
-       </nav> <!-- end #nav-wrap -->
-
+    <div class="container theme-showcase" role="main">
       <div class="row">
+	<div class="col-md-3">
+	  <h3><font color="#000080">Prashnna K Gyawali</font></h3>
+	  <img class="img-thumbnail" src="images/gyawali_photo.jpg" alt="" style="width:70%"/>
+	  <br /><br />
+	  <h4><font color="#000080">Contact</font></h4>
+	<!-- <font size="3"><a href="mailto:prashnna.gyawali@gmail.com" class="icon fa-envelope"></a> prashnna.gyawali@gmail.com<br /> -->
+	<font size="3"><a href="mailto:prashnna.gyawali@mail.wvu.edu" class="icon fa-envelope"></a> prashnna.gyawali@mail.wvu.edu<br />
+	<a href="https://www.google.com/maps/place/AERB+(Advanced+Engineering+Research+Building)/@39.6460596,-79.9736513,17z/data=!3m1!4b1!4m6!3m5!1s0x88357b9915104e87:0x664999291c1f4fb6!8m2!3d39.6460596!4d-79.971071!16s%2Fg%2F11c2nlxjlt?entry=ttu" class="icon fa-building"></a> AERB (Room: 260)<br />
+	<a href="https://twitter.com/pkgyawali" class="icon fa-twitter"></a> &nbsp &nbsp &nbsp<a href="https://www.linkedin.com/in/prashnna-k-gyawali-3571958a" class="icon fa-linkedin"></a>
+	&nbsp &nbsp &nbsp <a  href="https://github.com/Prasanna1991" class="icon fa-github"></a>
+	<br>
+	<!-- <a href="https://twitter.com/pkgyawali" class="icon fa-twitter"></a> @pkgyawali<br />
+	<a href="https://www.linkedin.com/in/prashnna-k-gyawali-3571958a" class="icon fa-linkedin"></a> @pkgyawali<br /> -->
+	</div>
+	
+	<div class="col-md-9">
+	  <br /><br />
+	  <h3></h3>
+	  <font size="3">
 
-         <div class="three columns">
+<h3><font color="#000080">Hi there!</font></h3>
+<p>I am an Assistant Professor at West Virginia University in the Lane Department of Computer Science and Electrical Engineering. Before my stint at WVU, I did my postdoctoral training at Stanford University (under the mentorship of <a href="https://profiles.stanford.edu/zihuai-he">Prof. Zihuai He</a> and <a href="https://www.james-zou.com">Prof. James Zou</a>) and completed my PhD in Computer Science from RIT (advisor <a href="https://pht180.rit.edu/cblwang/">Prof. Linwei Wang</a>). </p> 
+<!-- <blockquote style=" padding: 10px; background-color: #eeeeee;"><font size="3"> -->
+         <p>My research interests lie within the broad area of machine learning for healthcare. More specifically, my research spans unbiased, fair,  and explainable ML. I am also interested in generative AI and multimodal AI and their implications in various domains, including health and medicine.  
+	</p>
 
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-<h3>Hi there!</h3>
-<p>I am a postdoctoral scholar at the School of Medicine at Stanford University, working with <a href="https://profiles.stanford.edu/zihuai-he">Prof. Zihuai He</a> and <a href="https://www.james-zou.com">Prof. James Zou</a>. We are developing new (explainable) deep learning methods for Alzheimer's disease risk prediction in diverse populations.</p>
+	</font>
+	
+<!-- </blockquote> -->
+		  <!-- <p> I am starting the <font color="#cc0000">AI4Health</font> research group at WVU.  -->
 
 <p>
-I completed my Ph.D. in Computing and Information Sciences from Rochester Institute of Technology under the advisement of <a href="http://pht180.rit.edu/cblwang/">Prof. Linwei Wang</a>. In my Ph.D. thesis, I focused on learning from limited labeled data in the biomedical domain. Toward this, I focused on disentanglement and semi-supervised learning. If you’re interested, please take a look at my <a href="https://scholarworks.rit.edu/cgi/viewcontent.cgi?article=11843&context=theses">Ph.D. thesis</a>. 
-</p>
+<font color="#000080">NOTE:</font> I am looking for motivated graduate students broadly interested in robust and explainable machine learning and its applications to health care. 
+	If you are excited about this line of research and would like to work with me, please <a href="javascript:toggle_vis('contact')">read this</a> before contacting me. 
+</p>		  <div id="contact" style="display:none"> 
+		  <blockquote style=" padding: 10px; background-color: #EEEEEE;"><font size="3">
+                  <p>I appreciate your interest in joining my lab! I am recruiting PhD for the Spring 2024 or Fall of 2024. </p>
+		  <p>If you are a <i>current or admitted PhD student at WVU</i>, please email me with your CV and a brief description of your research interests. 
+	  	  </p>
+		  If you are <i>not (yet!) a student at WVU and would like to pursue a PhD under my guidance</i>, please apply to our <a href="http://catalog.wvu.edu/graduate/collegeofengineeringandmineralresources/thelanedepartmentofcomputerscienceandelectricalengineering/cs/">PhD program in Computer Science</a> and mention my name in your statements and applications. 
+		  <p> 
+		<p>I am also open to research collaborations with students and faculty both within WVU and elsewhere. If you are interested in collaborating with me and my group, please email me with a brief description of your research interests and background.</p>
+	    </p>
+		</blockquote>
+	          </div>
 
-<p>Overall, my research interests are:
-<ul>
-  <li>1. Machine Learning</li>
-  <li>2. Generative Models and Disentanglement</li>
-  <li>3. Learning with limited labelled datasets (e.g, Semi-supervised and self-supervised learning, etc.)</li>
-  <li>4. Health and AI (Electrocardiograms, ECGI, Medical imaginig and Genomics)</li>
-</ul>
-</p>
-	      <div class="row">
-                    <center><ul class="social">
-                        <li><a href="https://twitter.com/pkgyawali"><i class="fa fa-twitter"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/prashnna-k-gyawali-3571958a"><i class="fa fa-linkedin"></i></a></li>
-			<!-- <li><a  target="_blank" href="contents/cv.pdf" target="_blank" style="text-decoration: none;"><b style="letter-spacing: 3px; font-size: 28px; text-shadow: 1px 0 #999;">CV</b></a></li> -->
-			<li><a  target="_blank" href="https://github.com/Prasanna1991" target="_blank"><i class="fa fa-github"></i></a></li>
-                    </ul></center>
-            </div>
-	    <div class="row">
-                    <center>
-                        [<a href="https://scholar.google.com/citations?user=mZ_KzxcAAAAJ&hl=en">Scholar Page</a>]
-                   </center>
-            </div>
+	  
+	</div>
+	<font size="3">
       </div>
+
+
+
+      <div class="page-header" id="research"><h3><font color="#000080">Research</font></h3></div>
+
+      <!-- <h4>Publications</h4>     -->
+	  <font size="3"><p>See <a href="https://scholar.google.com/citations?user=mZ_KzxcAAAAJ&hl=en">Google Scholar Page </a> for latest preprints.  * below indicates equal contribution</p></font>
+      <font size="3">
+      <ul>
+	      <li> 
+		      <p> A deep-learning algorithm to classify skin lesions from mpox virus infection. <br />
+				Alexander H Thieme, Yuanning Zheng, Gautam Machiraju, Chris Sadee, Mirja Mittermaier, Maximilian Gertler, Jorge L Salinas, Krithika Srinivasan, Prashnna K Gyawali, Francisco Carrillo-Perez, Angelo Capodici, Maximilian Uhlig, Daniel Habenicht, Anastassia Löser, Maja Kohler, Maximilian Schuessler, David Kaul, Johannes Gollrad, Jackie Ma, Christoph Lippert, Kendall Billick, Isaac Bogoch, Tina Hernandez-Boussard, Pascal Geldsetzer, Olivier Gevaert. <br />
+			      <i></i> Nature Medicine, 2023.<br />
+		      </p>
+	      </li>
+
+	      <li> 
+			<p> Continual Unsupervised Disentangling of Self-Organizing Representations. <br />
+				Zhiyuan Li, Xiajun Jiang, Ryan Missel, Prashnna K Gyawali, Nilesh Kumar, Linwei Wang. <br />
+				<i></i> International Conference on Learning Representations (ICLR), 2023.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> GhostKnockoff inference empowers identification of putative causal variants in genome-wide association studies. <br />
+				Zihuai He, Linxi Liu, Michael E Belloy, Yann Le Guen, Aaron Sossin, Xiaoxia Liu, Xinran Qi, Shiyang Ma, Prashnna K Gyawali, Tony Wyss-Coray, Hua Tang, Chiara Sabatti, Emmanuel Candès, Michael D Greicius, Iuliana Ionita-Laza. <br />
+				<i></i> Nature Communications, 2022.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Interpretable Modeling and Reduction of Unknown Errors in Mechanistic Operators. <br />
+				Maryam Toloubidokhti, Nilesh Kumar, Zhiyuan Li, Prashnna K Gyawali, Brian Zenger, Wilson W Good, Rob S MacLeod, Linwei Wang. <br />
+				<i></i> International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), 2022.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Ensembling improves stability and power of feature selection for deep learning models. <br />
+				Prashnna K Gyawali, Xiaoxia Liu, James Zou, Zihuai He. <br />
+				<i></i> Machine Learning in Computational Biology (MLCB), 2022.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Vela pulsar: single pulses analysis with machine learning techniques. <br />
+				Carlos O Lousto, Ryan Missel, Harshkumar Prajapati, Valentina Sosa Fiscella, Federico G López Armengol, Prashnna K Gyawali, Linwei Wang, Nathan D Cahill, Luciano Combi, Santiago del Palacio, Jorge A Combi, Guillermo Gancio, Federico García, Eduardo M Gutiérrez and Fernando Hauscarriaga. <br />
+				<i></i> Monthly Notices of the Royal Astronomical Society, 2022.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Latent-optimization based Disease-aware Image Editing for Medical Image Augmentation. <br />
+				Aakash Saboo, Prashnna K Gyawali, Ankit Shukla, Neeraj Jain, Manoj Sharma and Linwei Wang. <br />
+				<i></i> British Machine Vision Conference (BMVC), 2021.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Learning to Disentangle Inter-subject Anatomical Variations in Electrocardiographic Data. <br />
+				Prashnna K Gyawali, Jaideep Vitthal Murkute, Maryam Toloubidokhti, Xiajun Jiang, B. Milan Horacek, John Sapp and Linwei Wang. <br />
+				<i></i> IEEE Transacations on Biomedical Engineering (TBE), 2021.<br />
+				<a href="https://github.com/Prasanna1991/SimECG" class="btn btn-xs btn-default">Dataset</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Deep Adaptive Electrocardiographic Imaging with Generative Forward Model for Error Reduction. <br />
+				Maryam Toloubidokhti, Prashnna K Gyawali, Omar A. Gharbia, Xiajun Jiang, Jaume Coll Font, Jake A. Bergquist, Brain Zenger, Wilson W. Good, Dana H. Brooks, Rob S. MacLeod and Linwei Wang. <br />
+				<i></i> Functional Imaging and Modeling of the Heart (FIMH), 2021.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Semi-Supervised Learning for Eye Image Segmentation. <br />
+				Aayush K Chaudhary*, Prashnna K Gyawali*, Linwei Wang and Jeff B Pelz. <br />
+				<i></i> ACM Symposium On Eye Tracking Research & Applications (ETRA), 2021.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> A hybrid machine learning approach to localizing the origin of ventricular tachycardia using 12-lead electrocardiograms. <br />
+				Ryan Missel, Prashnna K Gyawali, Jaideep Vitthal Murkute, Zhiyuan Li, Shijie Zhou, Amir AbdelWahab, Jason Davis, James Warren, John L Sapp and Linwei Wang. <br />
+				<i></i> Computers in Biology and Medicine, 2020.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Enhancing Mixup-based Semi-Supervised Learning with Explicit Lipschitz Regularization. <br />
+				Prashnna K Gyawali, Sandesh Ghimire, Linwei Wang. <br />
+				<i></i> IEEE International Conference on Data Mining (ICDM), 2020.<br />
+				<a href="https://github.com/Prasanna1991/Mixup-LR" class="btn btn-xs btn-default">Code</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Semi-supervised Medical Image Classification with Global Latent Mixing. <br />
+				Prashnna K Gyawali, Sandesh Ghimire, Pradeep Bajracharya, Zhiyuan Li, Linwei Wang. <br />
+				<i></i> International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), 2020.<br />
+				<a href="https://github.com/Prasanna1991/LatentMixing" class="btn btn-xs btn-default">Code</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Learning Geometry-Dependent and Physics-Based Inverse Image Reconstruction. <br />
+				Xiajun Jiang, Sandesh Ghimire, Prashnna K Gyawali, Linwei Wang. <br />
+				<i></i> International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), 2020.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Progressive Learning and Disentanglement of Hierarchical Representations. <br />
+				Zhiyuan Li, Jaideep Vitthal Murkute, Prashnna K Gyawali, Linwei Wang. <br />
+				<i></i> International Conference on Learning Representations (ICLR), 2020.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Sequential Factorized Autoencoder for Localizing the Origin of Ventricular Activation From 12-Lead Electrocardiograms. <br />
+				Prashnna K. Gyawali, B. Milan Horacek, John Sapp, Linwei Wang. <br />
+				<i></i> IEEE Transacations on Biomedical Engineering (TBE), 2019.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Improving Disentangled Representation Learning with the Beta Bernoulli Process. <br />
+				Prashnna K Gyawali, Zhiyuan Li, Cameron Knight, Sandesh Ghimire, B. Milan Horacek, John Sapp, Linwei Wang. <br />
+				<i></i> IEEE International Conference on Data Mining (ICDM), 2019.<br />
+				<a href="https://github.com/Prasanna1991/IBP-VAE" class="btn btn-xs btn-default">Code</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Semi-Supervised Learning by Disentangling and Self-Ensembling over Stochastic Latent Space. <br />
+				Prashnna K Gyawali*, Zhiyuan Li*, Sandesh Ghimire, Linwei Wang. <br />
+				<i></i> International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), 2019.<br />
+				<a href="https://github.com/Prasanna1991/StochasticEnsembleSSL" class="btn btn-xs btn-default">Code</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Improving Generalization of Deep Networks for Inverse Reconstruction of Image Sequences. <br />
+				Sandesh Ghimire, Prashnna K Gyawali, Jwala Dhamala, John Sapp, B. Milan Horacek, Linwei Wang. <br />
+				<i></i> International Conference on Information Processing in Medical Imaging (IPMI), 2019.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Generative Modeling and Inverse Imaging of Cardiac Transmembrane Potential. <br />
+				Sandesh Ghimire, Jwala Dhamala, Prashnna K Gyawali, John Sapp, B. Milan Horacek, Linwei Wang. <br />
+				<i></i> International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI), 2018.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Automatic Coordinate Prediction of the Exit of Ventricular Tachycardia from 12-lead Electrocardiogram. <br />
+				Prashnna K Gyawali, Shuhang Chen, Huafeng Liu, B. Milan Horacek, John Sapp, Wang L. <br />
+				<i></i> Computing in Cardiology (CinC), 2017. <i>(Semifinalist for Young Investigator Award)</i><br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Atrial Fibrillation Classification from a Short Single Lead ECG Recording Using Hierarchical Classifier. <br />
+				Erin Coppola, Prashnna K Gyawali, Nihar Vanjara, Dan Giaime, Linwei Wang. <br />
+				<i></i> Computing in Cardiology (CinC), 2017.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Disentangling inter-subject variations: Automatic localization of ventricular tachycardia from 12-lead electrocardiograms. <br />
+				Shuhang Chen, Prashnna K Gyawali, Huafeng Liu, B. Milan Horacek, John Sapp, Linwei Wang. <br />
+				<i></i> IEEE International Symposium on Biomedical Imaging (ISBI), 2017.<br />
+			</p>
+		</li>
+
+		<li> 
+			<p> Deep learning based large scale handwritten Devnagari character recognition. <br />
+				Shailesh Acharya, Ashok K Pant, Prashnna K Gyawali.. <br />
+				<i></i> IEEE International Conference on Software, Knowledge, Information Management and Applications (SKIMA), 2015.<br />
+				<a href="https://github.com/Prasanna1991/DHCD_Dataset" class="btn btn-xs btn-default">Dataset</a>
+			</p>
+		</li>
+
+		<li> 
+			<p> Automatic Nepali Number Plate Recognition with Support Vector Machines. <br />
+				Ashok K. Pant, Prashnna K Gyawali, Shailesh Acharya. <br />
+				<i></i> IEEE International Conference on Software, Knowledge, Information Management and Applications (SKIMA), 2015.<br />
+				<a href="https://github.com/Prasanna1991/LPR" class="btn btn-xs btn-default">Dataset</a>
+			</p>
+		</li>
+
+      </ul>
+      </font>
+		
+    <div class="page-header" id="students"><h3><font color="#000080">Advising</font></h3></div>
+		<p>I am grateful to be collaborating with the following students:</p>
+		<ul>
+			<li>Shivam (PhD student, WVU CS, co-advising with Prof. Yemunala Reddy)</li>
+			<li>Jacob Thrasher (PhD Student, WVU CS) </li>
+			<li>Alina Devkota (PhD Student, WVU CS) <i>(starting from Fall 2023)</i></li>
+		</ul>
+		<p> Previous mentee:</p>
+		<ul>
+			<li>Aaksh Saboo (served as undergraduate mentor, now PhD student at King's College London)</li>
+			<li>Prasiddha Siwakoti (served as graduate mentor)</li>
+			<li>Sudarshan Regmi (served as undergraduate mentor)</li>
+		</ul>
+
+    <div class="page-header" id="teaching"><h3><font color="#000080">Teaching</font></h3></div>
+     <font size="3">
 	     
-	      </div>
-	   
-	   
-	   
-	   
-   </section> <!-- About Section End-->
+      <ul>
+	<li><p> Advanced Data Mining<br/>
+	        Instructor <br />
+		<i>West Virginia University</i>, 2023.<br />
+	</p></li>
+	<li><p> Generative Modeling and Variational Autoencoder<br/>
+		Invited Lecturer <br />
+	<i>Nepal AI School</i>, 2021.<br />
+	</p></li>
+	<li><p> Image Processing and Pattern Recognition<br/>
+		Instructor<br />
+	<i>Institute of Engineering, Tribhuwan University</i>, 2015.<br />
+	</p></li>
+	</ul>
+	</font>
+    </div> <!-- /container -->
 
 
-   <!-- Resume Section
-   ================================================== -->
-   <section id="recent">
-       
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-          
-          <div class = "header-col">
-              <h1><span>TIMELINE EVENTS</span></h1>
-          </div>
-          
-<!--           <div class = "row"> -->
-		  
-	<div style="broder:solid 1px #990000;">
-<table style="width: 879px;" border=1>
-<tbody>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp December 2022</strong></td>
-<td style="width: 773px; height: 23px;">Our paper for monkeypox detection has been accepted by Nature Medicine. Full version will be available soon.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp November 2022</strong></td>
-<td style="width: 773px; height: 23px;">1 paper accepted by Nature Communications and 2 papers by MLCB conference.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp June 2022</strong></td>
-<td style="width: 773px; height: 23px;">1 paper accepted by MICCAI 2022 and 1 paper by ICML-CompBio 2022.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp February 2022</strong></td>
-<td style="width: 773px; height: 23px;">Our paper on single pulse analysis with machine learning is now available at Monthly Notices of the Royal Astronomical Society.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp October 2021</strong></td>
-<td style="width: 773px; height: 23px;">Our paper on medical image latent optimization is accepted by BMVC 2021.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp August 2021</strong></td>
-<td style="width: 773px; height: 23px;">Our study on disentanglement for electrocardiographic signals is accepted by IEEE Transactions of Biomedical Engineering.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp May 2021</strong></td>
-<td style="width: 773px; height: 23px;">Started postdoctoral research at Stanford University.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp March 2021</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Semi-Supervised Learning for Eye Image Segmentation" is accepted at ETRA 2021.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Feb 2021</strong></td>
-<td style="width: 773px; height: 23px;">I successfully defended my dissertation.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Summer 2020</strong></td>
-<td style="width: 773px; height: 23px;">Research Intern at Google.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp May 2020</strong></td>
-<td style="width: 773px; height: 23px;">Two papers accepted in MICCAI 2020.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Feb 2020</strong></td>
-<td style="width: 773px; height: 23px;">Our work "A Machine Learning Approach for Computer-Guided Localization of the Origin of Ventricular Tachycardia Using 12-Lead Electrocardiograms" is accepted by &nbsp;<a href="https://www.hrsonline.org">Heart Rhythm Society&nbsp;</a> (HRS 2020) and selected to participate in the special session to highlight the most novel and innovative abstracts of 2020.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Aug 2019</strong></td>
-<td style="width: 773px; height: 23px;">Our journal paper "Sequential Factorized Autoencoder for Localizing the Origin of Ventricular Activation From 12-Lead Electrocardiograms" is accepted in IEEE Transactions on Biomedical Engineering.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Aug 2019</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Improving Disentangled Representation Learning with the Beta Bernoulli Process" is accepted in ICDM 2019.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp June 2019</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Semi-Supervised Learning by Disentangling and Self-Ensembling over Stochastic Latent Space" is accepted in MICCAI 2019.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Summer 2019</strong></td>
-<td style="width: 773px; height: 23px;">Internship at Verisk AI Lab as AI/ML Research Intern.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 130px; height: 23px;"><strong>&nbsp Dec 2018</strong></td>
-<td style="width: 773px; height: 23px;">Presented poster at BNP@NeurIPS and&nbsp;<a href="https://sites.google.com/view/socml-2018/home">SOCML&nbsp;</a>(highly recommended "unconference").</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp Nov 2018</strong></td>
-<td style="width: 773px; height: 23px;">Two papers accepted in NeurIPS workshops (ML4H@NeurIPS and BNP@NeurIPS).</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp Summer 2018</strong></td>
-<td style="width: 773px; height: 23px;">Mentor for&nbsp;<a href="https://www.cs.rit.edu/~reu/index.html">Research Experience for Undergraduates (NSF-REU)&nbsp;</a>program at RIT for the project "Multi-modal sensing and quantification of atypical attention in autism spectrum disorder."</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp Nov 2017</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Learning disentangled representation from 12-lead electrograms: application in localizing the origin of Ventricular Tachycardia" was accepted in the Health Intelligence Workshop, AAAI 2018.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp June 2017</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Automatic Coordinate Prediction of the Exit of Ventricular Tachycardia from 12-lead Electrocardiogram" was accepted to CinC 2017. The paper was selected as a semi-finalist for Rosanna Degani Young Investigator Award.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp Summer 2017</strong></td>
-<td style="width: 773px; height: 23px;">Mentor for&nbsp;<a href="https://www.cs.rit.edu/~reu/index.html">Research Experience for Undergraduates (NSF-REU)&nbsp;</a>program at RIT for the project "Attention and behavior of students in online vs. face-to-face learning contexts."</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp May 2017</strong></td>
-<td style="width: 773px; height: 23px;">Our paper "Disentangling Inter-Subject Variations: Automatic Localization of Ventricular Tachycardia Origin from 12-Lead Electrocardiograms" was accepted to ISBI 2017.</td>
-</tr>
-<tr style="height: 23px;">
-<td style="width: 105px; height: 23px;"><strong>&nbsp Aug 2016</strong></td>
-<td style="width: 773px; height: 23px;">Joined Rochester Institute of Technology for Ph.D. in Computing and Information Sciences.</td>
-</tr>
-</tbody>
-</table>
-          </div>
-	      
-	      
-        </div> <!-- end education -->
-          
-          
-</section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="research">
-       <!-- Education
-        ----------------------------------------------- -->
-       <div class="row education">
-           
-           <div class = "header-col">
-               <h1><span>RESEARCH WORKS</span></h1>
-           </div>
-           
-           <div class = "eleven columns main-col">
-               <ul>
-		  <h2><span>2023</span></h2>
-		       
-		   <font size="3">Alexander H Thieme, Yuanning Zheng, Gautam Machiraju, Chris Sadee, Mirja Mittermaier, Maximilian Gertler, Jorge L Salinas, Krithika Srinivasan, <b>Prashnna Gyawali</b>, Francisco Carrillo-Perez, Angelo Capodici, Maximilian Uhlig, Daniel Habenicht, Anastassia Löser, Maja Kohler, Maximilian Schuessler, David Kaul, Johannes Gollrad, Jackie Ma, Christoph Lippert, Kendall Billick, Isaac Bogoch, Tina Hernandez-Boussard, Pascal Geldsetzer, Olivier Gevaert. "A deep-learning algorithm to classify skin lesions from mpox virus infection". Nature Medicine. (2023).</font>	
-		   <br/>
-		   <br/>
-		   <font size="3">Zhiyuan Li, Xiajun Jiang, Ryan Missel, <b>Prashnna Kumar Gyawali</b>, Nilesh Kumar, Linwei Wang. "Continual Unsupervised Disentangling of Self-Organizing Representations". International Conference on Learning Representations (ICLR-23) (to appear).</font>	
-		   <br/>
-		   <br/>
-		       
-		   <h2><span>2022</span></h2>
-		       
-		   <font size="3">Zihuai He, Linxi Liu, Michael E Belloy, Yann Le Guen, Aaron Sossin, Xiaoxia Liu, Xinran Qi, Shiyang Ma, <b>Prashnna K Gyawali</b>, Tony Wyss-Coray, Hua Tang, Chiara Sabatti, Emmanuel Candès, Michael D Greicius, Iuliana Ionita-Laza. "GhostKnockoff inference empowers identification of putative causal variants in genome-wide association studies". Nature Communications. (2022).</font>	
-		   <br/>
-		   <br/>
-	           <font size="3">Maryam Toloubidokhti, Nilesh Kumar, Zhiyuan Li, <b>Prashnna K Gyawali</b>, Brian Zenger, Wilson W Good, Rob S MacLeod, Linwei Wang. "Interpretable Modeling and Reduction of Unknown Errors in Mechanistic Operators". International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI-22). </font>
-	   	   <br/>
-		   <br/>   
-		   <font size="3"><b>Prashnna K Gyawali</b>, Xiaoxia Liu, James Zou, Zihuai He. "Ensembling improves stability and power of feature selection for deep learning models". Machine Learning in Computational Biology. (MLCB 2022).</font>	
-		   <br/>
-		   <br/>
-		       
-		   <font size="3">Carlos O Lousto, Ryan Missel, Harshkumar Prajapati, Valentina Sosa Fiscella, Federico G López Armengol, <b>Prashnna Kumar Gyawali</b>, Linwei Wang, Nathan D Cahill, Luciano Combi, Santiago del Palacio, Jorge A Combi, Guillermo Gancio, Federico García, Eduardo M Gutiérrez and Fernando Hauscarriaga. "Vela pulsar: single pulses analysis with machine learning techniques". Monthly Notices of the Royal Astronomical Society. (2022).</font>	
-		   <br/>
-	          <h2><span>2021</span></h2>
-		   <font size="3">Aakash Saboo, <b>Prashnna K Gyawali</b>, Ankit Shukla, Neeraj Jain, Manoj Sharma and Linwei Wang. "Latent-optimization based Disease-aware Image Editing for Medical Image Augmentation". The 32nd British Machine Vision Conference. (BMVC 2021).</font>	
-		   <br/>
-		   <br/>
-		   <font size="3"><b>Prashnna K Gyawali</b>, Jaideep Vitthal Murkute, Maryam Toloubidokhti, Xiajun Jiang, B. Milan Horacek, John Sapp and Linwei Wang. "Learning to Disentangle Inter-subject Anatomical Variations in Electrocardiographic Data". IEEE Transacations on Biomedical Engineering. (TBE 2021).</font>&nbsp;&nbsp;<a href="https://github.com/Prasanna1991/SimECG">[Dataset]</a></li>	
-		   <br/>
-		   <br/>
-		   <font size="3">Maryam Toloubidokhti, <b>Prashnna K Gyawali</b>, Omar A. Gharbia, Xiajun Jiang, Jaume Coll Font, Jake A. Bergquist, Brain Zenger, Wilson W. Good, Dana H. Brooks, Rob S. MacLeod and Linwei Wang. "Deep Adaptive Electrocardiographic Imaging with Generative Forward Model for Error Reduction". Functional Imaging and Modeling of the Heart (FIMH-2021). </font>		
-		   <br/>
-		   <br/>
-		   <font size="3">Aayush K Chaudhary*, <b>Prashnna K Gyawali*</b>, Linwei Wang and Jeff B Pelz. "Semi-Supervised Learning for Eye Image Segmentation". ACM Symposium On Eye Tracking Research & Applications (ETRA-2021). * equal contribution </font>		
-		   <br/>
-		  <h2><span>2020</span></h2>
-		   <font size="3">Ryan Missel, <b>Prashnna K Gyawali</b>, Jaideep Vitthal Murkute, Zhiyuan Li, Shijie Zhou, Amir AbdelWahab, Jason Davis, James Warren, John L Sapp and Linwei Wang. "A hybrid machine learning approach to localizing the origin of ventricular tachycardia using 12-lead electrocardiograms". Computers in Biology and Medicine. </font>		
-		   <br/>
-		   <br/>
-		   <font size="3"><b>Prashnna K. Gyawali</b>, Sandesh Ghimire and Linwei Wang. "Enhancing Mixup-based Semi-Supervised Learning with Explicit Lipschitz Regularization". IEEE International Conference on Data Mining (ICDM-20). </font>		
-		   [<a href="https://github.com/Prasanna1991/Mixup-LR">Code</a>]
-		   <br/>
-		   <br/>
-		   <font size="3"><b>Prashnna K. Gyawali</b>, Sandesh Ghimire, Pradeep Bajracharya, Zhiyuan Li and Linwei Wang. "Semi-supervised Medical Image Classification with Global Latent Mixing". International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI-20). (early acceptance).</font>		
-		   [<a href="https://github.com/Prasanna1991/LatentMixing">Code</a>]
-		   <br/>
-		   <br/>
-		   <font size="3">Xiajun Jiang, Sandesh Ghimire, <b>Prashnna K. Gyawali</b> and Linwei Wang. "Learning Geometry-Dependent and Physics-Based Inverse Image Reconstruction". International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI-20).</font>		   
-		   <br/>
-		   <br/>
-		   <font size="3">Zhiyuan Li, Jaideep Vitthal Murkute, <b>Prashnna K. Gyawali</b> and Linwei Wang. "Progressive Learning and Disentanglement of Hierarchical Representations". International Conference on Learning Representations (ICLR-20). (accepted for spotlight).</font>
-		  <h2><span>2019</span></h2>
-		   <font size="3"><b>Prashnna K. Gyawali</b>, B. Milan Horacek, John Sapp and Linwei Wang. "Sequential Factorized Autoencoder for Localizing the Origin of Ventricular Activation From 12-Lead Electrocardiograms". IEEE Transacations on Biomedical Engineering. (TBE 2019).</font>
-		   <br/>
-  		   <br/> 
-		   <font size="3"><b>Prashnna K. Gyawali</b>, Zhiyuan Li, Cameron Knight, Sandesh Ghimire, B. Milan Horacek, John Sapp and Linwei Wang. "Improving Disentangled Representation Learning with the Beta Bernoulli Process". IEEE International Conference on Data Mining (ICDM-19).</font>
-		   [<a href="https://github.com/Prasanna1991/IBP-VAE">Code</a>]
-		   <br/>
-		   <br/>
-		   <font size="3"><b>Prashnna K. Gyawali*</b>, Zhiyuan Li*, Sandesh Ghimire, and Linwei Wang. "Semi-Supervised Learning by Disentangling and Self-Ensembling over Stochastic Latent Space". International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI-19).</font>
-                   * equal contribution [<a href="https://github.com/Prasanna1991/StochasticEnsembleSSL">Code</a>]
-		   <br/>
-		   <br/>
-		   <font size="3">Sandesh Ghimire, <b>Prashnna K. Gyawali</b>, Jwala Dhamala, John Sapp, B. Milan Horacek, and Linwei Wang. "Improving Generalization of Deep Networks for Inverse Reconstruction of Image Sequences". International Conference on Information Processing in Medical Imaging (IPMI-19).</font>
-                   <h2><span>2018</span></h2>  
-		   <font size="3"><b>Prashnna K. Gyawali</b>, Cameron Knight, Sandehs Ghimire, John Sapp, B. Milan Horacek and Linwei Wang. "Deep Generative Model with Beta Bernoulli Process for Modeling and Learning Confounding Factors". All of Bayesian Nonparametric workshop at NeurIPS 2018 (BNP@NeurIPS 2018).
-                   <br/>
-		   <br/>
-		   <font size="3">Sandesh Ghimire, Jwala Dhamala, <b>Prashnna K. Gyawali</b>, John Sapp, B. Milan Horacek and Linwei Wang. "Generative Modeling and Inverse Imaging of Cardiac Transmembrane Potential". International Conference on Medical Image Computing & Computer Assisted Intervention (MICCAI-18) (also MLH4@NeurIPS 2018).</font>
-                   <br/>
-		   <br/>
-		   <font size="3"><b>Prashnna K. Gyawali</b>, B. Milan Horacek, John Sapp, and Linwei Wang. "Learning disentangled representation from 12-lead electrocardiograms: application in localizing the origin of Ventricular Tachycardia". Health Intelligence Workshop, 32nd AAAI Conference on Artificial Intelligence (AAAI-18). </font>
-		   [<a href="https://github.com/Prasanna1991/MMD_VAE">Code</a>]
-		   <h2><span>2017</span></h2>
-                   <font size="3"><b>Prashnna K. Gyawali</b>, Shuhang Chen, Huafeng Liu, B. Milan Horacek, John Sapp and Wang L. "Automatic Coordinate Prediction of the Exit of Ventricular Tachycardia from 12-lead Electrocardiogram". Computing in Cardiology (CinC-17).
-                   <br/>
-		   <br/>
-		   <font size="3">Erin Coppola, <b>Prashnna K. Gyawali</b>, Nihar Vanjara, Dan Giaime and Linwei Wang. "Atrial Fibrillation Classification from a Short Single Lead ECG Recording Using Hierarchical Classifier". Computing in Cardiology (CinC-17).</font>
-                   <br/>
-		   <br/>
-                   <font size="3">Shuhang Chen, <b>Prashnna K. Gyawali</b>, Huafeng Liu, B. Milan Horacek, John Sapp and Linwei Wang. "Disentangling inter-subject variations: Automatic localization of ventricular tachycardia from 12-lead electrocardiograms". IEEE International Symposium on Biomedical Imaging (ISBI-17).</font>
-                   <h2><span>2015</span></h2>
-                   <font size="3">Shailesh Acharya, Ashok K. Pant and <b>Prashnna K. Gyawali</b>. "Deep learning based large scale handwritten Devnagari character recognition". IEEE International Conference on Software, Knowledge, Information Management and Applications (SKIMA-15). </font>&nbsp;&nbsp;<a href="https://github.com/Prasanna1991/DHCD_Dataset">[Dataset]</a></li>
-                   <br/>
-		   <br/>
-                   <font size="3">Ashok K. Pant, <b>Prashnna K. Gyawali</b> and Shailesh Acharya. "Automatic Nepali Number Plate Recognition with Support Vector Machines". IEEE International Conference on Software, Knowledge, Information Management and Applications (SKIMA).</font>&nbsp;&nbsp;<a href="https://github.com/Prasanna1991/LPR">[Dataset]</a></li>
-               </ul>
-           </div>
-       </div> <!-- end education -->
-       
-
-   </section> <!-- Portfolio Section End-->
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-
-            <ul class="copyright">
-               <li>&copy; Copyright 2022 Prashnna K Gyawali</li>
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#about"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript
+	 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/docs.min.js"></script>
+      <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+      <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
 </html>
